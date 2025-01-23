@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" InitialTargets="rmt_libssh2_wincng_init_targets_0;rmt_libssh2_wincng_init_targets_1;rmt_libssh2_wincng_init_targets_2;rmt_libssh2_wincng_ItemGroupInit_targets_3">
+  <PropertyGroup Label="Default initializers for properties">
+    <Linkages-rmt_libssh2_wincng Condition="'$(Linkages-rmt_libssh2_wincng)' == ''">dynamic</Linkages-rmt_libssh2_wincng>
+    <CallingConventions-rmt_libssh2_wincng Condition="'$(CallingConventions-rmt_libssh2_wincng)' == ''">cdecl</CallingConventions-rmt_libssh2_wincng>
+  </PropertyGroup>
+  <ItemDefinitionGroup Label="v140 and Win32 and Release and static" Condition="'$(PlatformToolset.ToLower())' == 'v140' And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkages-rmt_libssh2_wincng.ToLower())' == 'static'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)../../build/native/include/v140/Win32/Release/static;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)../../build/native/include/v140/Win32/Release/static;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>$(MSBuildThisFileDirectory)../../build/native/lib/v140/Win32/Release/static/libssh2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Label="v140 and Win32 and Debug and dynamic" Condition="'$(PlatformToolset.ToLower())' == 'v140' And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkages-rmt_libssh2_wincng.ToLower())' == 'dynamic'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)../../build/native/include/v140/Win32/Debug/dynamic;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)../../build/native/include/v140/Win32/Debug/dynamic;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>$(MSBuildThisFileDirectory)../../build/native/lib/v140/Win32/Debug/dynamic/libssh2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Label="v140 and x64 and Debug and dynamic" Condition="'$(PlatformToolset.ToLower())' == 'v140' And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkages-rmt_libssh2_wincng.ToLower())' == 'dynamic'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)../../build/native/include/v140/x64/Debug/dynamic;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)../../build/native/include/v140/x64/Debug/dynamic;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>$(MSBuildThisFileDirectory)../../build/native/lib/v140/x64/Debug/dynamic/libssh2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Label="v140 and x64 and Release and static" Condition="'$(PlatformToolset.ToLower())' == 'v140' And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkages-rmt_libssh2_wincng.ToLower())' == 'static'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)../../build/native/include/v140/x64/Release/static;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)../../build/native/include/v140/x64/Release/static;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>$(MSBuildThisFileDirectory)../../build/native/lib/v140/x64/Release/static/libssh2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Label="v140 and x64 and Release and dynamic" Condition="'$(PlatformToolset.ToLower())' == 'v140' And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkages-rmt_libssh2_wincng.ToLower())' == 'dynamic'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)../../build/native/include/v140/x64/Release/dynamic;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)../../build/native/include/v140/x64/Release/dynamic;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>$(MSBuildThisFileDirectory)../../build/native/lib/v140/x64/Release/dynamic/libssh2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Label="v140 and Win32 and Debug and static" Condition="'$(PlatformToolset.ToLower())' == 'v140' And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkages-rmt_libssh2_wincng.ToLower())' == 'static'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)../../build/native/include/v140/Win32/Debug/static;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)../../build/native/include/v140/Win32/Debug/static;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>$(MSBuildThisFileDirectory)../../build/native/lib/v140/Win32/Debug/static/libssh2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Label="v140 and Win32 and Release and dynamic" Condition="'$(PlatformToolset.ToLower())' == 'v140' And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkages-rmt_libssh2_wincng.ToLower())' == 'dynamic'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)../../build/native/include/v140/Win32/Release/dynamic;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)../../build/native/include/v140/Win32/Release/dynamic;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>$(MSBuildThisFileDirectory)../../build/native/lib/v140/Win32/Release/dynamic/libssh2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Label="v140 and x64 and Debug and static" Condition="'$(PlatformToolset.ToLower())' == 'v140' And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkages-rmt_libssh2_wincng.ToLower())' == 'static'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)../../build/native/include/v140/x64/Debug/static;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)../../build/native/include/v140/x64/Debug/static;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>$(MSBuildThisFileDirectory)../../build/native/lib/v140/x64/Debug/static/libssh2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Target Name="rmt_libssh2_wincng_BeforeLink" AfterTargets="BeforeLink">
+    <CheckRuntimeLibrary RuntimeLibrary="%(ClCompile.RuntimeLibrary)" ExpectedRuntimeLibrary="none" LibraryName="rmt_libssh2_wincng" />
+  </Target>
+  <Target Name="rmt_libssh2_wincng_BeforeLink_Release_and_static" Label="Release and static" Condition="( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkages-rmt_libssh2_wincng.ToLower())' == 'static'" AfterTargets="rmt_libssh2_wincng_BeforeLink">
+    <CheckRuntimeLibrary RuntimeLibrary="%(ClCompile.RuntimeLibrary)" ExpectedRuntimeLibrary="MultiThreaded" LibraryName="rmt_libssh2_wincng" />
+  </Target>
+  <Target Name="rmt_libssh2_wincng_BeforeLink_Debug_and_static" Label="Debug and static" Condition="( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkages-rmt_libssh2_wincng.ToLower())' == 'static'" AfterTargets="rmt_libssh2_wincng_BeforeLink">
+    <CheckRuntimeLibrary RuntimeLibrary="%(ClCompile.RuntimeLibrary)" ExpectedRuntimeLibrary="MultiThreadedDebug" LibraryName="rmt_libssh2_wincng" />
+  </Target>
+  <Target Name="rmt_libssh2_wincng_AfterBuild" AfterTargets="AfterBuild">
+    <Copy UseHardlinksIfPossible="true" DestinationFolder="$(TargetDir)" SourceFiles="@(CopyToOutput)" SkipUnchangedFiles="true">
+      <Output TaskParameter="DestinationFiles" PropertyName="DestinationFiles" />
+      <Output TaskParameter="DestinationFiles" ItemName="DestinationFiles" />
+      <Output TaskParameter="CopiedFiles" PropertyName="CopiedFiles" />
+      <Output TaskParameter="CopiedFiles" ItemName="CopiedFiles" />
+    </Copy>
+  </Target>
+  <Target Name="rmt_libssh2_wincng_init_targets_1">
+    <StringContains Text="Linkages-dynamic" Library="rmt_libssh2_wincng" Value="dynamic" Condition="'$(Linkages-rmt_libssh2_wincng)'==''">
+      <Output TaskParameter="Result" PropertyName="Linkages-rmt_libssh2_wincng" />
+    </StringContains>
+    <StringContains Text="Linkages-static" Library="rmt_libssh2_wincng" Value="static" Condition="'$(Linkages-rmt_libssh2_wincng)'==''">
+      <Output TaskParameter="Result" PropertyName="Linkages-rmt_libssh2_wincng" />
+    </StringContains>
+    <StringContains Text="Linkages-ltcg" Library="rmt_libssh2_wincng" Value="ltcg" Condition="'$(Linkages-rmt_libssh2_wincng)'==''">
+      <Output TaskParameter="Result" PropertyName="Linkages-rmt_libssh2_wincng" />
+    </StringContains>
+    <StringContains Text="Linkages-sxs" Library="rmt_libssh2_wincng" Value="sxs" Condition="'$(Linkages-rmt_libssh2_wincng)'==''">
+      <Output TaskParameter="Result" PropertyName="Linkages-rmt_libssh2_wincng" />
+    </StringContains>
+    <StringContains Text="CallingConventions-cdecl" Library="rmt_libssh2_wincng" Value="cdecl" Condition="'$(CallingConventions-rmt_libssh2_wincng)'==''">
+      <Output TaskParameter="Result" PropertyName="CallingConventions-rmt_libssh2_wincng" />
+    </StringContains>
+    <StringContains Text="CallingConventions-stdcall" Library="rmt_libssh2_wincng" Value="stdcall" Condition="'$(CallingConventions-rmt_libssh2_wincng)'==''">
+      <Output TaskParameter="Result" PropertyName="CallingConventions-rmt_libssh2_wincng" />
+    </StringContains>
+    <StringContains Text="CallingConventions-fastcall" Library="rmt_libssh2_wincng" Value="fastcall" Condition="'$(CallingConventions-rmt_libssh2_wincng)'==''">
+      <Output TaskParameter="Result" PropertyName="CallingConventions-rmt_libssh2_wincng" />
+    </StringContains>
+    <StringContains Text="CallingConventions-thiscall" Library="rmt_libssh2_wincng" Value="thiscall" Condition="'$(CallingConventions-rmt_libssh2_wincng)'==''">
+      <Output TaskParameter="Result" PropertyName="CallingConventions-rmt_libssh2_wincng" />
+    </StringContains>
+    <StringContains Text="CallingConventions-clrcall" Library="rmt_libssh2_wincng" Value="clrcall" Condition="'$(CallingConventions-rmt_libssh2_wincng)'==''">
+      <Output TaskParameter="Result" PropertyName="CallingConventions-rmt_libssh2_wincng" />
+    </StringContains>
+    <StringContains Text="CallingConventions-vectorcall" Library="rmt_libssh2_wincng" Value="vectorcall" Condition="'$(CallingConventions-rmt_libssh2_wincng)'==''">
+      <Output TaskParameter="Result" PropertyName="CallingConventions-rmt_libssh2_wincng" />
+    </StringContains>
+  </Target>
+  <Target Name="rmt_libssh2_wincng_init_targets_2">
+    <SetEnv Condition="'$(PlatformToolset.ToLower())' == 'v140' And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkages-rmt_libssh2_wincng.ToLower())' == 'dynamic'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../../build/native/bin/v140/Win32/Debug/dynamic">
+      <Output TaskParameter="OutputEnvironmentVariable" PropertyName="PATH" />
+    </SetEnv>
+    <SetEnv Condition="'$(PlatformToolset.ToLower())' == 'v140' And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkages-rmt_libssh2_wincng.ToLower())' == 'dynamic'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../../build/native/bin/v140/x64/Debug/dynamic">
+      <Output TaskParameter="OutputEnvironmentVariable" PropertyName="PATH" />
+    </SetEnv>
+    <SetEnv Condition="'$(PlatformToolset.ToLower())' == 'v140' And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkages-rmt_libssh2_wincng.ToLower())' == 'dynamic'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../../build/native/bin/v140/x64/Release/dynamic">
+      <Output TaskParameter="OutputEnvironmentVariable" PropertyName="PATH" />
+    </SetEnv>
+    <SetEnv Condition="'$(PlatformToolset.ToLower())' == 'v140' And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkages-rmt_libssh2_wincng.ToLower())' == 'dynamic'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../../build/native/bin/v140/Win32/Release/dynamic">
+      <Output TaskParameter="OutputEnvironmentVariable" PropertyName="PATH" />
+    </SetEnv>
+  </Target>
+  <Target Name="rmt_libssh2_wincng_ItemGroupInit_targets_3">
+    <ItemGroup Label="v140 and Win32 and Debug and dynamic" Condition="'$(PlatformToolset.ToLower())' == 'v140' And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkages-rmt_libssh2_wincng.ToLower())' == 'dynamic'">
+      <CopyToOutput Include="$(MSBuildThisFileDirectory)../../build/native/bin/v140/Win32/Debug/dynamic/libssh2.dll" />
+      <CopyToOutput Include="$(MSBuildThisFileDirectory)../../build/native/bin/v140/Win32/Debug/dynamic/libssh2.pdb" />
+      <None Include="$(MSBuildThisFileDirectory)../../build/native/bin/v140/Win32/Debug/dynamic/libssh2.dll">
+        <DeploymentContent>true</DeploymentContent>
+      </None>
+    </ItemGroup>
+    <ItemGroup Label="v140 and x64 and Debug and dynamic" Condition="'$(PlatformToolset.ToLower())' == 'v140' And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkages-rmt_libssh2_wincng.ToLower())' == 'dynamic'">
+      <CopyToOutput Include="$(MSBuildThisFileDirectory)../../build/native/bin/v140/x64/Debug/dynamic/libssh2.dll" />
+      <CopyToOutput Include="$(MSBuildThisFileDirectory)../../build/native/bin/v140/x64/Debug/dynamic/libssh2.pdb" />
+      <None Include="$(MSBuildThisFileDirectory)../../build/native/bin/v140/x64/Debug/dynamic/libssh2.dll">
+        <DeploymentContent>true</DeploymentContent>
+      </None>
+    </ItemGroup>
+    <ItemGroup Label="v140 and x64 and Release and dynamic" Condition="'$(PlatformToolset.ToLower())' == 'v140' And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkages-rmt_libssh2_wincng.ToLower())' == 'dynamic'">
+      <CopyToOutput Include="$(MSBuildThisFileDirectory)../../build/native/bin/v140/x64/Release/dynamic/libssh2.dll" />
+      <None Include="$(MSBuildThisFileDirectory)../../build/native/bin/v140/x64/Release/dynamic/libssh2.dll">
+        <DeploymentContent>true</DeploymentContent>
+      </None>
+    </ItemGroup>
+    <ItemGroup Label="v140 and Win32 and Debug and static" Condition="'$(PlatformToolset.ToLower())' == 'v140' And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkages-rmt_libssh2_wincng.ToLower())' == 'static'">
+      <CopyToOutput Include="$(MSBuildThisFileDirectory)../../build/native/bin/v140/Win32/Debug/static/libssh2.pdb" />
+    </ItemGroup>
+    <ItemGroup Label="v140 and Win32 and Release and dynamic" Condition="'$(PlatformToolset.ToLower())' == 'v140' And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkages-rmt_libssh2_wincng.ToLower())' == 'dynamic'">
+      <CopyToOutput Include="$(MSBuildThisFileDirectory)../../build/native/bin/v140/Win32/Release/dynamic/libssh2.dll" />
+      <None Include="$(MSBuildThisFileDirectory)../../build/native/bin/v140/Win32/Release/dynamic/libssh2.dll">
+        <DeploymentContent>true</DeploymentContent>
+      </None>
+    </ItemGroup>
+    <ItemGroup Label="v140 and x64 and Debug and static" Condition="'$(PlatformToolset.ToLower())' == 'v140' And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkages-rmt_libssh2_wincng.ToLower())' == 'static'">
+      <CopyToOutput Include="$(MSBuildThisFileDirectory)../../build/native/bin/v140/x64/Debug/static/libssh2.pdb" />
+    </ItemGroup>
+  </Target>
+  <ItemGroup>
+    <PropertyPageSchema Include="$(MSBuildThisFileDirectory)\default-propertiesui.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PropertyPageSchema Include="$(MSBuildThisFileDirectory)\rmt_libssh2_wincng-propertiesui-4b52ceb0-d424-4e74-adae-e7cb54135324.xml" />
+  </ItemGroup>
+  <UsingTask TaskName="NuGetPackageOverlay" AssemblyFile="$(NuGet-NativeExtensionPath)\coapp.NuGetNativeMSBuildTasks.dll" Condition="'$(DesignTimeBuild)' != 'true' AND ('$(NugetMsBuildExtensionLoaded)' == '' OR '$(NugetMsBuildExtensionLoaded)' == 'false')" />
+  <UsingTask TaskName="CheckRuntimeLibrary" AssemblyFile="$(NuGet-NativeExtensionPath)\coapp.NuGetNativeMSBuildTasks.dll" Condition="'$(DesignTimeBuild)' != 'true' AND ('$(NugetMsBuildExtensionLoaded)' == '' OR '$(NugetMsBuildExtensionLoaded)' == 'false')" />
+  <UsingTask TaskName="StringContains" AssemblyFile="$(NuGet-NativeExtensionPath)\coapp.NuGetNativeMSBuildTasks.dll" Condition="'$(DesignTimeBuild)' != 'true' AND ('$(NugetMsBuildExtensionLoaded)' == '' OR '$(NugetMsBuildExtensionLoaded)' == 'false')" />
+  <Target Name="rmt_libssh2_wincng_init_targets_0">
+    <Copy SkipUnchangedFiles="true" SourceFiles="$(NuGet-NativeExtensionPath)\coapp.NuGetNativeMSBuildTasks.dll.orig" DestinationFiles="$(NuGet-NativeExtensionPath)\coapp.NuGetNativeMSBuildTasks.dll" />
+    <PropertyGroup>
+      <NugetMsBuildExtensionLoaded Condition="'$(NugetMsBuildExtensionLoaded)' == '' OR '$(NuGet-OverlayLoaded)' == 'false'">true</NugetMsBuildExtensionLoaded>
+    </PropertyGroup>
+  </Target>
+</Project>
