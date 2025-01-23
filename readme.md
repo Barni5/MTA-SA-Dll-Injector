@@ -2,7 +2,7 @@
 
 # MTA:SA DLL Injector
 
-A simple DLL injector for MTA:SA. This injector is not "undetected" and requires a netc bypass bypass.
+A simple DLL injector for MTA:SA. This injector is not "undetected" and requires a netc bypass.
 
 </div>
 
